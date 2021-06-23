@@ -1,0 +1,31 @@
+<h1>Listado de Oficinas de BCP</h1>
+<table class="table">
+  <thead style="background-color: #012D74 !important;">
+    <tr style="color:white !important;">
+      <th scope="col">Codigo</th>
+      <th scope="col">Agencia</th>
+      <th scope="col">Distrito</th>
+      <th scope="col">Provincia</th>
+      <th scope="col">Departamento</th>
+      <th scope="col">Dirección</th>
+      <th scope="col">Foto</th>
+      <th scope="col">Opción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let oficina of Oficinas">
+      <td>{{oficina.id}}</td>
+      <td>{{oficina.agencia}}</td>
+      <td>{{oficina.distrito}}</td>
+      <td>{{oficina.provincia}}</td>
+      <td>{{oficina.departamento}}</td>
+      <td>{{oficina.direccion}}</td>
+      <td>
+        <img src="assets/img/{{oficina.foto}}" width="30" class="img-fluid" />
+      </td>
+      <td>
+        <a [routerLink]="['/oficina',oficina.id]"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+      </td>
+    </tr>
+  </tbody>
+</table>

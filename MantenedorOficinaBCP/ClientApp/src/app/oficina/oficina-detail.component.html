@@ -1,0 +1,46 @@
+<button (click)="Regresar()" class="btn-primary col-sm-4 form-control" style="width:120px;">
+  <i class="fa fa-arrow-circle-o-left"></i> Regresar
+</button>
+<h1>Detalle de Oficina BCP</h1>
+<br />
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <label class="col-sm-4">Codigo:</label>
+      <input type="text" [(ngModel)]="selectedOficina.id" class="col-sm-8 form-control" />
+    </div>
+    <div class="col-sm-6">
+      <label class="col-sm-4">Agencia:</label>
+      <input type="text" [(ngModel)]="selectedOficina.agencia" class="col-sm-8 form-control" />
+    </div>
+    <div class="col-sm-6">
+      <label class="col-sm-4">Distrito:</label>
+      <input type="text" [(ngModel)]="selectedOficina.distrito" class="col-sm-8 form-control" />
+    </div>
+    <div class="col-sm-6">
+      <label class="col-sm-4">Provincia:</label>
+      <input type="text" [(ngModel)]="selectedOficina.provincia" class="col-sm-8 form-control" />
+    </div>
+    <div class="col-sm-6">
+      <label class="col-sm-4">Departamento:</label>
+      <input type="text" [(ngModel)]="selectedOficina.departamento" class="col-sm-8 form-control" />
+    </div>
+    <div class="col-sm-6">
+      <label class="col-sm-4">Dirección:</label>
+      <input type="text" [(ngModel)]="selectedOficina.direccion" class="col-sm-8 form-control" />
+    </div>
+  </div>
+  <div class="row">
+    <br />
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="row">
+        <br />
+        <button (click)="EditarOficina()" class="btn-success col-sm-8 form-control" style="width:100px;">
+          <i class="fa fa-check-square-o"></i> Actualizar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
